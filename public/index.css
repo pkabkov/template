@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.head-nav-container {
+  width: auto;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #000000;
+  color: rgb(218, 218, 218);
+}
+
+.head-nav-logo {
+  color: rgb(197, 13, 13);
+  font-size: 25px;
+}
+
+.head-nav-bar {
+  display: flex;
+  align-items: center;
+  height: 80%;
+}
+
+.head-nav-bar a {
+  margin-right: 15px;
+}
+
+.head-nav-bar a i {
+  font-size: 15px;
+}
+
+.nav-divider {
+  height: 60%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0 15px;
+}
+
+.nav-list,
+.nav-auth {
+  height: 100%;
+}
+
+.nav-list ul,
+.nav-auth ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-list li,
+.nav-auth li {
+  margin: 0 15px;
+}
+
+.nav-list a,
+.nav-auth a {
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.nav-auth a:last-child {
+  font-weight: bold;
+}
+
+.nav-auth li {
+  height: 80%;
+}
+
+.nav-auth li#log-in a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.nav-auth li#sign-up {
+  background-color: white;
+  border-radius: 5%;
+}
+
+.nav-auth li#sign-up a {
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.content-top {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  font-weight: 700;
+  gap: 15px;
+}
+
+.content-top h1 {
+  
+  height: 100%;
+  font-size: 48px;
+  color: black;
+  margin: 0;
+  line-height: 54px;
+}
+
+.music-nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+.music-nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+.music-nav ul li {
+  font-size: 16px;
+  cursor: pointer;
+  padding-bottom: 5px;
+  list-style: none;
+}
+
+.music-nav ul li#overview {
+  color: rgb(197, 13, 13);
+}
+
+.music-nav ul li#new-releases {
+  color: rgb(94, 94, 94);
+}
