@@ -147,3 +147,33 @@ body {
 .music-nav ul li#new-releases {
   color: rgb(94, 94, 94);
 }
+
+.music-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.music-tags-title{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+.music-tags-list#electronic{
+  background: linear-gradient(rgba(0, 11, 14, 0), rgba(0, 11, 14, 1)), url(./tags/music-tags-electronic.webp);
+  background-position: center;
+  background-size: cover;
+}
+/* .music-tags-title::after {
+  background-color: #d92323;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+} */
