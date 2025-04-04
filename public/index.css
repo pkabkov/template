@@ -406,7 +406,7 @@ section {
   font-size: 14px;
 }
 
-.track-card-music-name {
+.middle-card-text {
   font-size: 14px;
   color: black;
 }
@@ -459,3 +459,43 @@ section {
   flex-direction: row;
   gap: 5px;
 }
+
+.small-tracks-container {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  list-style: none;
+  height: 60px;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+}
+
+.small-track-card {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.small-track-image {
+  width: 60px;
+  aspect-ratio: 1/1;
+  background: url(./tags/tags-latest-release/latest-release.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.small-track-info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  gap: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
