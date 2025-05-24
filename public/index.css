@@ -13,21 +13,19 @@ section {
   margin: 0 auto;
 }
 
-ol,
-ul {
+ol, ul {
   list-style-type: none;
   padding-left: 0;
 }
 
+/* Навигация */
 .head-nav-container {
-  width: auto;
   height: 65px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 0 20px;
-  background-color: #000000;
+  background-color: #000;
   color: rgb(218, 218, 218);
 }
 
@@ -39,7 +37,6 @@ ul {
 .head-nav-bar {
   display: flex;
   align-items: center;
-  height: 80%;
 }
 
 .head-nav-bar a {
@@ -57,25 +54,16 @@ ul {
   margin: 0 15px;
 }
 
-.nav-list,
-.nav-auth {
-  height: 100%;
-}
-
-.nav-list ul,
-.nav-auth ul {
+.nav-list ul, .nav-auth ul {
   display: flex;
-  height: 100%;
   align-items: center;
 }
 
-.nav-list li,
-.nav-auth li {
+.nav-list li, .nav-auth li {
   margin: 0 15px;
 }
 
-.nav-list a,
-.nav-auth a {
+.nav-list a, .nav-auth a {
   text-decoration: none;
   font-size: 16px;
   letter-spacing: 1px;
@@ -85,61 +73,51 @@ ul {
   font-weight: bold;
 }
 
-.nav-auth li {
-  height: 80%;
-}
-
-.nav-auth li#log-in a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-}
-
 .nav-auth li#sign-up {
   background-color: white;
   border-radius: 5%;
 }
 
 .nav-auth li#sign-up a {
-  color: #000000;
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
 }
 
-.content-top {
-  width: 100%;
-  height: 100px;
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20px;
-  padding-top: 40px;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.content-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 20px;
   font-weight: 700;
 }
 
 .content-top h1 {
-  height: 100%;
   font-size: 48px;
   color: black;
-  margin: 0;
   line-height: 54px;
-}
-
-.music-nav {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  gap: 30px;
 }
 
 .music-nav ul {
   display: flex;
   gap: 15px;
+  padding: 0;
+  margin: 0;
 }
 
 .music-nav ul li {
@@ -148,27 +126,12 @@ ul {
   padding-bottom: 5px;
 }
 
-.music-nav ul li#overview {
+#overview {
   color: rgb(197, 13, 13);
 }
 
-.music-nav ul li#new-releases {
+#new-releases {
   color: rgb(94, 94, 94);
-}
-
-.music-tags {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.music-tags-list {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
-  width: 100%;
-  gap: 30px;
 }
 
 .section-title {
@@ -179,218 +142,32 @@ ul {
 
 .section-title::after {
   content: "";
-  bottom: -10px;
-  left: 50%;
-  margin-left: -25px;
-  margin-top: 1px;
+  display: block;
   width: 50px;
   height: 2px;
+  margin: 1px auto 0;
   background-color: #d92323;
-  display: block;
-  position: relative;
-}
-
-.big-tag {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-#electronic {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url(./tags/tags-to-explore/music-tags-electronic.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.more-tags {
-  width: auto;
-  aspect-ratio: 1/1;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 30px;
-}
-
-.small-tag {
-  max-width: 100%;
-  max-height: 100%;
-  overflow: hidden;
-  display: flex;
-}
-
-#rock {
-  background: url(./tags/tags-to-explore/rock-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#hip-hop {
-  background: url(./tags/tags-to-explore/hip-hop-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#indie {
-  background: url(./tags/tags-to-explore/indie-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#jazz {
-  background: url(./tags/tags-to-explore/jazz-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#reggae {
-  background: url(./tags/tags-to-explore/reggae-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#british {
-  background: url(./tags/tags-to-explore/british-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#punk {
-  background: url(./tags/tags-to-explore/punk-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#eighties {
-  background: url(./tags/tags-to-explore/80s-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#dance {
-  background: url(./tags/tags-to-explore/music-tags-electronic.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#acoustic {
-  background: url(./tags/tags-to-explore/acoustic-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#rnb {
-  background: url(./tags/tags-to-explore/rnb-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#hardcore {
-  background: url(./tags/tags-to-explore/hardcore-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#country {
-  background: url(./tags/tags-to-explore/country-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#blues {
-  background: url(./tags/tags-to-explore/blues-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#alternative {
-  background: url(./tags/tags-to-explore/alternative-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#classical {
-  background: url(./tags/tags-to-explore/classical-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#rap {
-  background: url(./tags/tags-to-explore/hip-hop-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#metal {
-  background: url(./tags/tags-to-explore/metal-tag.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.page-content {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin-bottom: 50px;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-}
-
-.content-top-wrapper {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .more-tags-list {
-  width: 100%;
-  height: auto;
   display: grid;
   grid-template-columns: repeat(6, minmax(200px, 1fr));
-  padding: 0;
   gap: 30px;
+  width: 100%;
 }
 
 .card {
-  width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.track-card-image {
+.medium-circle-tag {
   width: 100%;
   aspect-ratio: 1/1;
-  background: url(./tags/tags-latest-release/latest-release.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url(./tags/tags-latest-release/latest-release.webp) center/cover no-repeat;
+  border-radius: 50%;
+  border: 1px solid #e8e8e8;
 }
 
 .card-info {
@@ -403,11 +180,50 @@ ul {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 100%;
-  text-decoration: none;
   color: black;
   font-weight: bold;
   font-size: 14px;
+  text-decoration: none;
+}
+
+.card-bottom-tags-list {
+  display: flex;
+  gap: 5px;
+}
+
+.card-bottom {
+  font-size: 12px;
+  opacity: 0.5;
+  color: black;
+}
+
+.small-tracks-container {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: repeat(6, 70px);
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.small-track-card {
+  display: flex;
+  gap: 15px;
+}
+
+.small-track-image {
+  width: 60px;
+  aspect-ratio: 1/1;
+  background: url(./tags/tags-latest-release/latest-release.webp) center/cover no-repeat;
+  border: 1px solid #e8e8e8;
+}
+
+.small-track-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px 0;
+  overflow: hidden;
 }
 
 .middle-card-text {
@@ -415,112 +231,22 @@ ul {
   color: black;
 }
 
-.card-bottom {
-  font-size: 12px;
-  opacity: 0.5;
-  text-decoration: none;
-  color: black;
-}
-
-.two-big-tags {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 2/1;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-
-#first-hot-big-tag {
-  background: url(./tags/tags-to-explore/music-tags-electronic.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#second-hot-big-tag {
-  background: url(./tags/tags-to-explore/music-tags-electronic.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.medium-circle-tag {
-  width: 100%;
-  aspect-ratio: 1/1;
-  background: url(./tags/tags-latest-release/latest-release.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  border: 1px solid #e8e8e8;
-  box-sizing: border-box;
-}
-
-.card-bottom-tags-list {
-  height: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-}
-
-.small-tracks-container {
-  display: grid;
-  grid-template-columns: repeat(3, 370px);
-  grid-template-rows: repeat(6, 70px);
-  width: 100%;
-  gap: 20px;
-  justify-content: center;
-}
-
-.small-track-card {
-  height: 60px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-
-.small-track-image {
-  width: 60px;
-  aspect-ratio: 1/1;
-  background: url(./tags/tags-latest-release/latest-release.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 1px solid #e8e8e8;
-  box-sizing: border-box;
-}
-
-.small-track-info {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  gap: 5px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
 footer {
   background-color: #111;
-  display: block;
   padding-top: 50px;
   width: 100%;
 }
 
+.footer-top {
+  padding-bottom: 50px;
+}
+
 .container {
-  width: 1230px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
   display: flex;
   justify-content: space-between;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .footer-heading {
@@ -532,14 +258,311 @@ footer {
 
 .footer-links li a {
   color: #fff;
-  text-decoration: none;
   font-size: 12px;
+  text-decoration: none;
 }
 
-.footer-top {
-  padding-bottom: 50px;
+/* Вторая страница */
+
+.search-results-container {
+  background: #fff;
+  padding: 32px 24px 24px 24px;
+  border-radius: 8px;
+  max-width: 760px;
+  margin: 32px auto 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.search-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.search-query {
+  font-weight: bold;
+}
+.search-tabs ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+.search-tabs li {
+  font-size: 1.1rem;
+  color: #222;
+  cursor: pointer;
+  padding-bottom: 6px;
+}
+.tab-active {
+  font-weight: bold;
+  border-bottom: 2px solid #d92323;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fafafa;
+  padding: 0 8px;
+  max-width: 500px;
+}
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  padding: 10px 8px;
+  outline: none;
+}
+.search-clear {
+  width: 24px;
+  height: 24px;
+  background: url('cross-icon.svg') center/16px no-repeat;
+  border: none;
+  cursor: pointer;
+  margin-right: 4px;
+}
+.search-submit {
+  width: 24px;
+  height: 24px;
+  background: url('search-icon.svg') center/16px no-repeat;
+  border: none;
+  cursor: pointer;
+}
+.main-section {
+  margin-top: 32px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 0 0 0;
 }
 
-.content-top-header {
-  font-size: 30px;
+.main-section-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 12px 16px;
+}
+
+.main-section-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;                  
+  gap: 0;                               
+}
+
+.main-section-card {
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(to bottom, #e0e0e0 60%, #bdbdbd 100%);
+  border-radius: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-section-bg::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  background: url('star-icon.svg') center/60% no-repeat;
+  opacity: 0.18;
+  z-index: 0;
+}
+
+.main-section-bg {
+  position: relative;
+  z-index: 1;
+  padding: 18px 16px 14px 16px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.38) 65%, rgba(0,0,0,0.08) 100%);
+  height: 100%;
+}
+
+.main-section-bg::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  background: url('star-icon.svg') center/60% no-repeat;
+  opacity: 0.18;
+  z-index: 0;
+}
+
+.artist-name {
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+  line-height: 1.2;
+}
+
+.artist-listeners {
+  font-size: 0.97rem;
+  font-weight: 400;
+  opacity: 0.93;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.12);
+}
+
+.main-section-more {
+  text-align: right;
+  margin: 8px 16px 12px 0;
+}
+
+.main-section-more a {
+  color: #1976d2;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+  .artists-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .artists-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main-container {
+  max-width: 1100px;
+  min-width: 300px;
+  margin: 32px auto 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.search-results-container,
+.artists-section {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+}
+
+.tracks-section {
+  margin-top: 32px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 0 0 0;
+}
+
+.tracks-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 12px 16px;
+}
+
+.tracks-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.track-row {
+  display: grid;
+  grid-template-columns: 40px 40px 48px 1fr 1fr 60px;
+  align-items: center;
+  height: 54px;
+  border-bottom: 1px solid #ececec;
+  transition: background 0.15s;
+  background: #fff;
+}
+.track-row:last-child {
+  border-bottom: none;
+}
+.track-row:hover {
+  background: #f7f7f7;
+}
+
+.track-play {
+  width: 32px;
+  height: 32px;
+  margin-left: 8px;
+  background: url('icons/track-play.svg') center/18px no-repeat;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.track-fav {
+  width: 32px;
+  height: 32px;
+  background: url('icons/heart.svg') center/18px no-repeat;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.track-cover {
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #ddd;
+  margin-right: 8px;
+}
+
+.track-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 8px;
+}
+
+.track-artist {
+  font-size: 1rem;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 8px;
+}
+
+.track-duration {
+  font-size: 0.98rem;
+  color: #888;
+  text-align: right;
+  margin-right: 16px;
+}
+
+.tracks-more {
+  text-align: right;
+  margin: 8px 16px 12px 0;
+}
+
+.tracks-more a {
+  color: #1976d2;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .track-row {
+    grid-template-columns: 32px 32px 36px 2fr 2fr 44px;
+  }
+}
+@media (max-width: 600px) {
+  .track-row {
+    grid-template-columns: 28px 28px 0 2fr 2fr 40px;
+  }
+  .track-cover { display: none; }
 }
