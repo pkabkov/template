@@ -13,7 +13,8 @@ section {
   margin: 0 auto;
 }
 
-ol, ul {
+ol,
+ul {
   list-style-type: none;
   padding-left: 0;
 }
@@ -24,7 +25,7 @@ ol, ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding-left: 40px;
   background-color: #000;
   color: rgb(218, 218, 218);
 }
@@ -54,16 +55,19 @@ ol, ul {
   margin: 0 15px;
 }
 
-.nav-list ul, .nav-auth ul {
+.nav-list ul,
+.nav-auth ul {
   display: flex;
   align-items: center;
 }
 
-.nav-list li, .nav-auth li {
+.nav-list li,
+.nav-auth li {
   margin: 0 15px;
 }
 
-.nav-list a, .nav-auth a {
+.nav-list a,
+.nav-auth a {
   text-decoration: none;
   font-size: 16px;
   letter-spacing: 1px;
@@ -74,15 +78,30 @@ ol, ul {
 }
 
 .nav-auth li#sign-up {
-  background-color: white;
-  border-radius: 5%;
+  color: black;
+  background-color: #fff;
+  border-radius: 6px;
+  transition: background 1s;
+  box-shadow: none;
+  padding: 0;
 }
 
 .nav-auth li#sign-up a {
-  color: #000;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 7px 22px;
+  border-radius: 22px;
+  font-size: 15px;
+  text-decoration: none;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-auth li#sign-up:hover,
+.nav-auth li#sign-up:focus {
+  background: #d4d4d4;
 }
 
 .content {
@@ -111,6 +130,7 @@ ol, ul {
   font-size: 48px;
   color: black;
   line-height: 54px;
+  text-align: center;
 }
 
 .music-nav ul {
@@ -145,7 +165,7 @@ ol, ul {
   display: block;
   width: 50px;
   height: 2px;
-  margin: 1px auto 0;
+  margin: 10px auto 0;
   background-color: #d92323;
 }
 
@@ -212,7 +232,6 @@ ol, ul {
 }
 
 .small-track-image {
-  width: 60px;
   aspect-ratio: 1/1;
   background: url(./tags/tags-latest-release/latest-release.webp) center/cover no-repeat;
   border: 1px solid #e8e8e8;
@@ -262,6 +281,52 @@ footer {
   text-decoration: none;
 }
 
+@media (max-width: 1350px) {
+  .more-tags-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .medium-circle-tag {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media (max-width: 1150px) {
+  .more-tags-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .medium-circle-tag {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .small-tracks-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    justify-content: center;
+  }
+}
+
 /* Вторая страница */
 
 .search-results-container {
@@ -270,16 +335,19 @@ footer {
   border-radius: 8px;
   max-width: 760px;
   margin: 32px auto 0 auto;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
+
 .search-title {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 16px;
 }
+
 .search-query {
   font-weight: bold;
 }
+
 .search-tabs ul {
   display: flex;
   gap: 32px;
@@ -287,16 +355,19 @@ footer {
   padding: 0;
   margin: 0 0 12px 0;
 }
+
 .search-tabs li {
   font-size: 1.1rem;
   color: #222;
   cursor: pointer;
   padding-bottom: 6px;
 }
+
 .tab-active {
   font-weight: bold;
   border-bottom: 2px solid #d92323;
 }
+
 .search-form {
   display: flex;
   align-items: center;
@@ -305,7 +376,9 @@ footer {
   background: #fafafa;
   padding: 0 8px;
   max-width: 500px;
+  width: 100%;
 }
+
 .search-input {
   flex: 1;
   border: none;
@@ -314,21 +387,24 @@ footer {
   padding: 10px 8px;
   outline: none;
 }
+
 .search-clear {
   width: 24px;
   height: 24px;
-  background: url('cross-icon.svg') center/16px no-repeat;
+  background: url('icons/xmark.svg') center/16px no-repeat;
   border: none;
   cursor: pointer;
   margin-right: 4px;
 }
+
 .search-submit {
   width: 24px;
   height: 24px;
-  background: url('search-icon.svg') center/16px no-repeat;
+  background: url('icons/search.svg') center/16px no-repeat;
   border: none;
   cursor: pointer;
 }
+
 .main-section {
   margin-top: 32px;
   background: #fff;
@@ -345,8 +421,8 @@ footer {
 .main-section-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 1fr;                  
-  gap: 0;                               
+  grid-auto-rows: 1fr;
+  gap: 0;
 }
 
 .main-section-card {
@@ -358,18 +434,6 @@ footer {
   justify-content: flex-start;
   position: relative;
   overflow: hidden;
-}
-
-.main-section-bg::before {
-  content: '';
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  right: 12px;
-  bottom: 12px;
-  background: url('star-icon.svg') center/60% no-repeat;
-  opacity: 0.18;
-  z-index: 0;
 }
 
 .main-section-bg {
@@ -384,27 +448,15 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
   min-height: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.38) 65%, rgba(0,0,0,0.08) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.38) 65%, rgba(0, 0, 0, 0.08) 100%);
   height: 100%;
-}
-
-.main-section-bg::before {
-  content: '';
-  position: absolute;
-  top: 18px;
-  left: 18px;
-  right: 18px;
-  bottom: 18px;
-  background: url('star-icon.svg') center/60% no-repeat;
-  opacity: 0.18;
-  z-index: 0;
 }
 
 .artist-name {
   font-size: 1.08rem;
   font-weight: 600;
   margin-bottom: 2px;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
   line-height: 1.2;
 }
 
@@ -412,28 +464,17 @@ footer {
   font-size: 0.97rem;
   font-weight: 400;
   opacity: 0.93;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.12);
-}
-
-.main-section-more {
-  text-align: right;
-  margin: 8px 16px 12px 0;
-}
-
-.main-section-more a {
-  color: #1976d2;
-  font-size: 1rem;
-  text-decoration: none;
-  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 @media (max-width: 1100px) {
-  .artists-grid {
+  .main-section-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media (max-width: 600px) {
-  .artists-grid {
+  .main-section-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -447,7 +488,7 @@ footer {
 }
 
 .search-results-container,
-.artists-section {
+.main-section {
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 32px;
@@ -481,9 +522,11 @@ footer {
   transition: background 0.15s;
   background: #fff;
 }
+
 .track-row:last-child {
   border-bottom: none;
 }
+
 .track-row:hover {
   background: #f7f7f7;
 }
@@ -560,9 +603,13 @@ footer {
     grid-template-columns: 32px 32px 36px 2fr 2fr 44px;
   }
 }
+
 @media (max-width: 600px) {
   .track-row {
     grid-template-columns: 28px 28px 0 2fr 2fr 40px;
   }
-  .track-cover { display: none; }
+
+  .track-cover {
+    display: none;
+  }
 }
