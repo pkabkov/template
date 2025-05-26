@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Search | Last.fm</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <nav>
+    <div class="head-nav-container">
+      <a href="./index.html" class="head-nav-logo">last.fm</a>
+      <div class="head-nav-bar">
+        <a><i class="fa-solid fa-magnifying-glass"></i></a>
+        <div class="nav-list">
+          <ul>
+            <li><a>Live</a></li>
+            <li><a>Music</a></li>
+            <li><a>Charts</a></li>
+            <li><a>Events</a></li>
+          </ul>
+        </div>
+        <div class="nav-divider"></div>
+        <div class="nav-auth">
+          <ul>
+            <li id="log-in"><a>Log in</a></li>
+            <li id="sign-up"><a>SIGN UP</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="search-results-container">
+    <h1 class="search-title">Search results for <span class="search-query"></span></h1>
+    <nav class="search-tabs">
+      <ul>
+        <li class="tab-active">Top Results</li>
+        <li>Artists</li>
+        <li>Albums</li>
+        <li>Tracks</li>
+      </ul>
+      <div class="tab-underline"></div>
+    </nav>
+    <form class="search-form">
+      <input type="text" class="search-input" />
+      <button type="clear" class="search-clear" aria-label="Clear"></button>
+      <button type="submit" class="search-submit" aria-label="Search"></button>
+    </form>
+  </div>
+
+  <div class="main-container">
+    <div class="main-section">
+      <div class="main-section-grid"></div>
+    </div>
+    <div class="main-section">
+      <div class="main-section-grid"></div>
+    </div>
+    <div class="tracks-section">
+      <div class="tracks-list"></div>
+    </div>
+  </div>
+
+  </div>
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-top-col">
+          <h2 class="footer-heading">Company</h2>
+          <ul class="footer-links">
+            <li><a href="#">About Last.fm</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Features</a></li>
+          </ul>
+        </div>
+        <div class="footer-top-col">
+          <h2 class="footer-heading">Help</h2>
+          <ul class="footer-links">
+            <li><a href="#">Track My Music</a></li>
+            <li><a href="#">Community Support</a></li>
+            <li><a href="#">Community Guidelines</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+        <div class="footer-top-col">
+          <h2 class="footer-heading">Goodies</h2>
+          <ul class="footer-links">
+            <li><a href="#">Download Scrobbler</a></li>
+            <li><a href="#">Developer API</a></li>
+            <li><a href="#">Free Music Downloads</a></li>
+            <li><a href="#">Merchandise</a></li>
+          </ul>
+        </div>
+        <div class="footer-top-col">
+          <h2 class="footer-heading">Account</h2>
+          <ul class="footer-links">
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">Subscribe</a></li>
+          </ul>
+        </div>
+        <div class="footer-top-col">
+          <h2 class="footer-heading">Follow Us</h2>
+          <ul class="footer-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">X</a></li>
+            <li><a href="#">Bluesky</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script type="module" src="./script-search.js"></script>
+
+</html>

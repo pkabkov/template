@@ -19,18 +19,18 @@ ul {
   padding-left: 0;
 }
 
-/* Навигация */
 .head-nav-container {
   height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 40px;
   background-color: #000;
   color: rgb(218, 218, 218);
 }
 
 .head-nav-logo {
+  text-decoration: none;
+  padding-left: 40px;
   color: rgb(197, 13, 13);
   font-size: 25px;
 }
@@ -185,7 +185,6 @@ ul {
 .medium-circle-tag {
   width: 100%;
   aspect-ratio: 1/1;
-  background: url(./tags/tags-latest-release/latest-release.webp) center/cover no-repeat;
   border-radius: 50%;
   border: 1px solid #e8e8e8;
 }
@@ -199,7 +198,6 @@ ul {
 .card-name {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
   color: black;
   font-weight: bold;
   font-size: 14px;
@@ -212,9 +210,10 @@ ul {
 }
 
 .card-bottom {
-  font-size: 12px;
+  font-size: 11px;
   opacity: 0.5;
   color: black;
+  text-decoration: none;
 }
 
 .small-tracks-container {
@@ -228,16 +227,18 @@ ul {
 
 .small-track-card {
   display: flex;
-  gap: 15px;
 }
 
 .small-track-image {
-  aspect-ratio: 1/1;
-  background: url(./tags/tags-latest-release/latest-release.webp) center/cover no-repeat;
+  width: 70px;
+  height: 70px;
   border: 1px solid #e8e8e8;
+  margin-right: 10px;
 }
 
 .small-track-info {
+  max-width: 280px;
+  text-overflow: ellipsis;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -246,6 +247,7 @@ ul {
 }
 
 .middle-card-text {
+  text-decoration: none;
   font-size: 14px;
   color: black;
 }
@@ -327,8 +329,6 @@ footer {
   }
 }
 
-/* Вторая страница */
-
 .search-results-container {
   background: #fff;
   padding: 32px 24px 24px 24px;
@@ -375,7 +375,6 @@ footer {
   border-radius: 4px;
   background: #fafafa;
   padding: 0 8px;
-  max-width: 500px;
   width: 100%;
 }
 
@@ -453,16 +452,18 @@ footer {
 }
 
 .artist-name {
-  font-size: 1.08rem;
-  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
   margin-bottom: 2px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
   line-height: 1.2;
 }
 
 .artist-listeners {
+  color: #fff;
+  text-decoration: none;
   font-size: 0.97rem;
-  font-weight: 400;
   opacity: 0.93;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 }
@@ -482,6 +483,7 @@ footer {
 .main-container {
   max-width: 1100px;
   min-width: 300px;
+  min-height: 700px;
   margin: 32px auto 0 auto;
   padding: 0 24px;
   box-sizing: border-box;
@@ -612,4 +614,67 @@ footer {
   .track-cover {
     display: none;
   }
+}
+
+.head-search-bar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.head-search-form {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  gap: 8px;
+}
+
+.head-search-input {
+  flex: 1;
+  background: #000;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  padding: 0 12px;
+  height: 100%;
+  border-radius: 4px;
+  outline: none;
+}
+
+.head-search-submit,
+.head-search-back {
+  width: 65px;
+  height: 65px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  cursor: pointer;
+  background-color: #d92323;
+}
+
+.head-search-back {
+  background-image: url('icons/xmark.svg');
+}
+
+.head-search-submit {
+  background-image: url('icons/search.svg');
+}
+
+.head-search-toggle-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
 }

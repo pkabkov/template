@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Search | Last.fm</title>
-  <link rel="stylesheet" href="index.css">
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Music | Last.fm</title>
 </head>
 
 <body>
   <nav>
     <div class="head-nav-container">
-      <div class="head-nav-logo">last.fm</div>
+      <a href="./index.html" class="head-nav-logo">last.fm</a>
       <div class="head-nav-bar">
-        <a><i class="fa-solid fa-magnifying-glass"></i></a>
+        <button class="head-search-toggle-btn" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
         <div class="nav-list">
           <ul>
             <li><a>Live</a></li>
@@ -31,272 +40,73 @@
       </div>
     </div>
   </nav>
-  <div class="search-results-container">
-    <h1 class="search-title">Search results for <span class="search-query">“never gonna give you up”</span></h1>
-    <nav class="search-tabs">
-      <ul>
-        <li class="tab-active">Top Results</li>
-        <li>Artists</li>
-        <li>Albums</li>
-        <li>Tracks</li>
-      </ul>
-      <div class="tab-underline"></div>
-    </nav>
-    <form class="search-form">
-      <input type="text" class="search-input" value="never gonna give you up" />
-      <button type="button" class="search-clear" aria-label="Clear"></button>
-      <button type="submit" class="search-submit" aria-label="Search"></button>
-    </form>
-  </div>
-
-  <div class="main-container">
-    <div class="main-section">
-      <h2 class="main-section-title">Artists</h2>
-      <div class="main-section-grid">
-        <div class="main-section-card">
-          <div class="main-section-bg">
-            <span class="artist-name">Never Gonna Give You Up</span>
-            <span class="artist-listeners">1,751 listeners</span>
-          </div>
-        </div>
-        <div class="main-section-card">
-          <div class="main-section-bg">
-            <span class="artist-name">Never Gonna Give You Up (8 Bit Remix Cover Version) [Tribute to Rick
-              Astley]</span>
-            <span class="artist-listeners">62 listeners</span>
-          </div>
-        </div>
-        <div class="main-section-card">
-          <div class="main-section-bg">
-            <span class="artist-name">Never Gonna Give You Up (J</span>
-            <span class="artist-listeners">43 listeners</span>
-          </div>
-        </div>
-        <div class="main-section-card">
-          <div class="main-section-bg">
-            <span class="artist-name">RICK ASTLEY – never gonna give you up 2004 (white label club remix)</span>
-            <span class="artist-listeners">142 listeners</span>
-          </div>
-        </div>
-        <div class="main-section-card">
-          <div class="main-section-bg">
-            <span class="artist-name">"Never Gonna Give You Up" scene</span>
-            <span class="artist-listeners">15 listeners</span>
-          </div>
-        </div>
-        <div class="main-section-card">
-          <div class="main-section-bg">
-            <span class="artist-name">"Never Gonna Give You Up" (1987 VS 2022) Side</span>
-            <span class="artist-listeners">17 listeners</span>
-          </div>
-        </div>
-        <div class="main-section-card">
-          <div class="main-section-bg">
-            <span class="artist-name">Never Gonna Give You Up</span>
-            <span class="artist-listeners">69 listeners</span>
-          </div>
-        </div>
-        <div class="main-section-card">
-          <div class="main-section-bg">
-            <span class="artist-name">NEVER GONNA GIVE YOU UP – RICK ASTLEY</span>
-            <span class="artist-listeners">21 listeners</span>
-          </div>
+  <div class="content">
+    <div class="page-content">
+      <div class="content-top">
+        <div class="content-top-wrapper">
+          <h1>Music</h1>
         </div>
       </div>
-
-      <div class="main-section">
-        <h2 class="main-section-title">Albums</h2>
-        <div class="main-section-grid">
-          <div class="main-section-card">
-            <div class="main-section-bg">
-              <span class="artist-name">Never Gonna Give You Up</span>
-              <span class="artist-listeners">1,751 listeners</span>
-            </div>
-          </div>
-          <div class="main-section-card">
-            <div class="main-section-bg">
-              <span class="artist-name">Never Gonna Give You Up (8 Bit Remix Cover Version) [Tribute to Rick
-                Astley]</span>
-              <span class="artist-listeners">62 listeners</span>
-            </div>
-          </div>
-          <div class="main-section-card">
-            <div class="main-section-bg">
-              <span class="artist-name">Never Gonna Give You Up (J</span>
-              <span class="artist-listeners">43 listeners</span>
-            </div>
-          </div>
-          <div class="main-section-card">
-            <div class="main-section-bg">
-              <span class="artist-name">RICK ASTLEY – never gonna give you up 2004 (white label club remix)</span>
-              <span class="artist-listeners">142 listeners</span>
-            </div>
-          </div>
-          <div class="main-section-card">
-            <div class="main-section-bg">
-              <span class="artist-name">"Never Gonna Give You Up" scene</span>
-              <span class="artist-listeners">15 listeners</span>
-            </div>
-          </div>
-          <div class="main-section-card">
-            <div class="main-section-bg">
-              <span class="artist-name">"Never Gonna Give You Up" (1987 VS 2022) Side</span>
-              <span class="artist-listeners">17 listeners</span>
-            </div>
-          </div>
-          <div class="main-section-card">
-            <div class="main-section-bg">
-              <span class="artist-name">Never Gonna Give You Up</span>
-              <span class="artist-listeners">69 listeners</span>
-            </div>
-          </div>
-          <div class="main-section-card">
-            <div class="main-section-bg">
-              <span class="artist-name">NEVER GONNA GIVE YOU UP – RICK ASTLEY</span>
-              <span class="artist-listeners">21 listeners</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="tracks-section">
-        <h2 class="tracks-title">Tracks</h2>
-        <div class="tracks-list">
-          <div class="track-row">
-            <button class="track-play"></button>
-            <button class="track-fav"></button>
-            <img src="rick.jpg" alt="" class="track-cover">
-            <span class="track-name">Never Gonna Give You Up</span>
-            <span class="track-artist">Rick Astley</span>
-            <span class="track-duration">3:33</span>
-          </div>
-          <div class="track-row">
-            <button class="track-play"></button>
-            <button class="track-fav"></button>
-            <img src="black-keys.jpg" alt="" class="track-cover">
-            <span class="track-name">Never Gonna Give You Up</span>
-            <span class="track-artist">The Black Keys</span>
-            <span class="track-duration">3:38</span>
-          </div>
-          <div class="track-row">
-            <button class="track-play"></button>
-            <button class="track-fav"></button>
-            <img src="barry-white.jpg" alt="" class="track-cover">
-            <span class="track-name">Never Gonna Give You Up</span>
-            <span class="track-artist">Barry White</span>
-            <span class="track-duration">4:05</span>
-          </div>
-          <div class="track-row">
-            <button class="track-play"></button>
-            <button class="track-fav"></button>
-            <img src="cake.jpg" alt="" class="track-cover">
-            <span class="track-name">Never Gonna Give You Up</span>
-            <span class="track-artist">Cake</span>
-            <span class="track-duration">3:50</span>
-          </div>
-          <div class="track-row">
-            <button class="track-play"></button>
-            <button class="track-fav"></button>
-            <img src="lisa.jpg" alt="" class="track-cover">
-            <span class="track-name">Never Gonna Give You Up</span>
-            <span class="track-artist">Lisa Stansfield</span>
-            <span class="track-duration">4:20</span>
-          </div>
-          <div class="track-row">
-            <button class="track-play"></button>
-            <button class="track-fav"></button>
-            <img src="barry-white.jpg" alt="" class="track-cover">
-            <span class="track-name">Never Gonna Give You Up</span>
-            <span class="track-artist">Barry White</span>
-            <span class="track-duration">7:58</span>
-          </div>
-          <div class="track-row">
-            <button class="track-play"></button>
-            <button class="track-fav"></button>
-            <img src="mac-beez.jpg" alt="" class="track-cover">
-            <span class="track-name">Never Gonna Give You Up</span>
-            <span class="track-artist">Mac Beez</span>
-            <span class="track-duration">3:32</span>
-          </div>
-          <div class="track-row">
-            <button class="track-play"></button>
-            <button class="track-fav"></button>
-            <img src="rick.jpg" alt="" class="track-cover">
-            <span class="track-name">Never Gonna Give You Up - 7" Mix</span>
-            <span class="track-artist">Rick Astley</span>
-            <span class="track-duration">3:32</span>
-          </div>
-          <div class="track-row">
-            <button class="track-play"></button>
-            <button class="track-fav"></button>
-            <img src="caitlin.jpg" alt="" class="track-cover">
-            <span class="track-name">Never Gonna Give You Up (Japanese Version)</span>
-            <span class="track-artist">Caitlin Myers</span>
-            <span class="track-duration">4:07</span>
-          </div>
-          <div class="track-row">
-            <button class="track-play"></button>
-            <button class="track-fav"></button>
-            <img src="barry-white.jpg" alt="" class="track-cover">
-            <span class="track-name">Never Gonna Give You Up</span>
-            <span class="track-artist">Barry White</span>
-            <span class="track-duration">7:58</span>
-          </div>
-        </div>
-      </div>
+      <section>
+        <ul class="more-tags-list"></ul>
+      </section>
+      <section>
+        <ul class="small-tracks-container"></ul>
+      </section>
     </div>
-  </div>
-  <footer>
-    <div class="footer-top">
-      <div class="container">
-        <div class="footer-top-col">
-          <h2 class="footer-heading">Company</h2>
-          <ul class="footer-links">
-            <li><a href="#">About Last.fm</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Features</a></li>
-          </ul>
-        </div>
-        <div class="footer-top-col">
-          <h2 class="footer-heading">Help</h2>
-          <ul class="footer-links">
-            <li><a href="#">Track My Music</a></li>
-            <li><a href="#">Community Support</a></li>
-            <li><a href="#">Community Guidelines</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </div>
-        <div class="footer-top-col">
-          <h2 class="footer-heading">Goodies</h2>
-          <ul class="footer-links">
-            <li><a href="#">Download Scrobbler</a></li>
-            <li><a href="#">Developer API</a></li>
-            <li><a href="#">Free Music Downloads</a></li>
-            <li><a href="#">Merchandise</a></li>
-          </ul>
-        </div>
-        <div class="footer-top-col">
-          <h2 class="footer-heading">Account</h2>
-          <ul class="footer-links">
-            <li><a href="#">Sign Up</a></li>
-            <li><a href="#">Log In</a></li>
-            <li><a href="#">Subscribe</a></li>
-          </ul>
-        </div>
-        <div class="footer-top-col">
-          <h2 class="footer-heading">Follow Us</h2>
-          <ul class="footer-links">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">X</a></li>
-            <li><a href="#">Bluesky</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">YouTube</a></li>
-          </ul>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-top-col">
+            <h2 class="footer-heading">Company</h2>
+            <ul class="footer-links">
+              <li><a href="#">About Last.fm</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Features</a></li>
+            </ul>
+          </div>
+          <div class="footer-top-col">
+            <h2 class="footer-heading">Help</h2>
+            <ul class="footer-links">
+              <li><a href="#">Track My Music</a></li>
+              <li><a href="#">Community Support</a></li>
+              <li><a href="#">Community Guidelines</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+          <div class="footer-top-col">
+            <h2 class="footer-heading">Goodies</h2>
+            <ul class="footer-links">
+              <li><a href="#">Download Scrobbler</a></li>
+              <li><a href="#">Developer API</a></li>
+              <li><a href="#">Free Music Downloads</a></li>
+              <li><a href="#">Merchandise</a></li>
+            </ul>
+          </div>
+          <div class="footer-top-col">
+            <h2 class="footer-heading">Account</h2>
+            <ul class="footer-links">
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Subscribe</a></li>
+            </ul>
+          </div>
+          <div class="footer-top-col">
+            <h2 class="footer-heading">Follow Us</h2>
+            <ul class="footer-links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">X</a></li>
+              <li><a href="#">Bluesky</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
+<script type="module" src="./script-main.js"></script>
 
 </html>
