@@ -390,7 +390,7 @@ footer {
 .search-clear {
   width: 24px;
   height: 24px;
-  background: url('icons/xmark.svg') center/16px no-repeat;
+  background: url('../assets/icons/xmark.svg') center/16px no-repeat;
   border: none;
   cursor: pointer;
   margin-right: 4px;
@@ -399,7 +399,7 @@ footer {
 .search-submit {
   width: 24px;
   height: 24px;
-  background: url('icons/search.svg') center/16px no-repeat;
+  background: url('../assets/icons/search.svg') center/16px no-repeat;
   border: none;
   cursor: pointer;
 }
@@ -537,7 +537,7 @@ footer {
   width: 32px;
   height: 32px;
   margin-left: 8px;
-  background: url('icons/track-play.svg') center/18px no-repeat;
+  background: url('../assets/icons/track-play.svg') center/18px no-repeat;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -547,7 +547,7 @@ footer {
 .track-fav {
   width: 32px;
   height: 32px;
-  background: url('icons/heart.svg') center/18px no-repeat;
+  background: url('../assets/icons/heart.svg') center/18px no-repeat;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -659,11 +659,11 @@ footer {
 }
 
 .head-search-back {
-  background-image: url('icons/xmark.svg');
+  background-image: url('../assets/icons/xmark.svg');
 }
 
 .head-search-submit {
-  background-image: url('icons/search.svg');
+  background-image: url('../assets/icons/search.svg');
 }
 
 .head-search-toggle-btn {
@@ -677,4 +677,4 @@ footer {
   align-items: center;
   justify-content: center;
   color: inherit;
-}
+} 
